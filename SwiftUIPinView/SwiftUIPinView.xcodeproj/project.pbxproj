@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		91D965BB27F1117B00F2928C /* SwiftUIPinViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D965BA27F1117B00F2928C /* SwiftUIPinViewApp.swift */; };
-		91D965BD27F1117B00F2928C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D965BC27F1117B00F2928C /* ContentView.swift */; };
+		91D965BD27F1117B00F2928C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D965BC27F1117B00F2928C /* MainView.swift */; };
 		91D965BF27F1117D00F2928C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91D965BE27F1117D00F2928C /* Assets.xcassets */; };
 		91D965C227F1117D00F2928C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91D965C127F1117D00F2928C /* Preview Assets.xcassets */; };
+		91D965CE27F1128200F2928C /* PinViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D965C927F1128200F2928C /* PinViewViewModel.swift */; };
+		91D965CF27F1128200F2928C /* PinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D965CA27F1128200F2928C /* PinView.swift */; };
+		91D965D027F1128200F2928C /* PinTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D965CC27F1128200F2928C /* PinTextField.swift */; };
+		91D965D127F1128200F2928C /* PinTextFieldViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D965CD27F1128200F2928C /* PinTextFieldViewItem.swift */; };
+		91D965D427F1136500F2928C /* BackPressTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D965D327F1136500F2928C /* BackPressTextfield.swift */; };
+		91D965D827F114CE00F2928C /* RoundedBorderModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D965D727F114CE00F2928C /* RoundedBorderModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		91D965B727F1117B00F2928C /* SwiftUIPinView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIPinView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91D965BA27F1117B00F2928C /* SwiftUIPinViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPinViewApp.swift; sourceTree = "<group>"; };
-		91D965BC27F1117B00F2928C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		91D965BC27F1117B00F2928C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		91D965BE27F1117D00F2928C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91D965C127F1117D00F2928C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		91D965C927F1128200F2928C /* PinViewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinViewViewModel.swift; sourceTree = "<group>"; };
+		91D965CA27F1128200F2928C /* PinView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinView.swift; sourceTree = "<group>"; };
+		91D965CC27F1128200F2928C /* PinTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinTextField.swift; sourceTree = "<group>"; };
+		91D965CD27F1128200F2928C /* PinTextFieldViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinTextFieldViewItem.swift; sourceTree = "<group>"; };
+		91D965D327F1136500F2928C /* BackPressTextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackPressTextfield.swift; sourceTree = "<group>"; };
+		91D965D727F114CE00F2928C /* RoundedBorderModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedBorderModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				91D965BA27F1117B00F2928C /* SwiftUIPinViewApp.swift */,
-				91D965BC27F1117B00F2928C /* ContentView.swift */,
+				91D965BC27F1117B00F2928C /* MainView.swift */,
+				91D965D527F1144600F2928C /* Source */,
 				91D965BE27F1117D00F2928C /* Assets.xcassets */,
 				91D965C027F1117D00F2928C /* Preview Content */,
 			);
@@ -65,6 +78,51 @@
 				91D965C127F1117D00F2928C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		91D965C827F1128200F2928C /* PinView */ = {
+			isa = PBXGroup;
+			children = (
+				91D965C927F1128200F2928C /* PinViewViewModel.swift */,
+				91D965CA27F1128200F2928C /* PinView.swift */,
+			);
+			path = PinView;
+			sourceTree = "<group>";
+		};
+		91D965CB27F1128200F2928C /* PinTextField */ = {
+			isa = PBXGroup;
+			children = (
+				91D965CC27F1128200F2928C /* PinTextField.swift */,
+				91D965CD27F1128200F2928C /* PinTextFieldViewItem.swift */,
+			);
+			path = PinTextField;
+			sourceTree = "<group>";
+		};
+		91D965D227F1136500F2928C /* BackPressTextfield */ = {
+			isa = PBXGroup;
+			children = (
+				91D965D327F1136500F2928C /* BackPressTextfield.swift */,
+			);
+			path = BackPressTextfield;
+			sourceTree = "<group>";
+		};
+		91D965D527F1144600F2928C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				91D965D627F1149100F2928C /* Modifiers */,
+				91D965D227F1136500F2928C /* BackPressTextfield */,
+				91D965CB27F1128200F2928C /* PinTextField */,
+				91D965C827F1128200F2928C /* PinView */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		91D965D627F1149100F2928C /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				91D965D727F114CE00F2928C /* RoundedBorderModifier.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +195,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91D965BD27F1117B00F2928C /* ContentView.swift in Sources */,
+				91D965BD27F1117B00F2928C /* MainView.swift in Sources */,
+				91D965D427F1136500F2928C /* BackPressTextfield.swift in Sources */,
+				91D965CE27F1128200F2928C /* PinViewViewModel.swift in Sources */,
+				91D965CF27F1128200F2928C /* PinView.swift in Sources */,
+				91D965D827F114CE00F2928C /* RoundedBorderModifier.swift in Sources */,
+				91D965D027F1128200F2928C /* PinTextField.swift in Sources */,
 				91D965BB27F1117B00F2928C /* SwiftUIPinViewApp.swift in Sources */,
+				91D965D127F1128200F2928C /* PinTextFieldViewItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +259,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +313,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

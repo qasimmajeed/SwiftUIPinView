@@ -2,8 +2,6 @@
 //  SwiftUIPinViewApp.swift
 //  SwiftUIPinView
 //
-//  Created by Qasim Majeed on 27.03.22.
-//
 
 import SwiftUI
 
@@ -11,7 +9,7 @@ import SwiftUI
 struct SwiftUIPinViewApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
